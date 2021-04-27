@@ -26,19 +26,16 @@ class HeroSection extends StatelessWidget {
 class HeroSectionMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16),
-      child: Wrap(
-        alignment: WrapAlignment.center,
-        runSpacing: 8,
-        children: [
-          SizedBox(height: 250, child: HeroCarousel()),
-          SizedBox(
-            width: 16,
-          ),
-          FixedHeroContainer()
-        ],
-      ),
+    return Wrap(
+      alignment: WrapAlignment.center,
+      runSpacing: 8,
+      children: [
+        SizedBox(height: 250, child: HeroCarousel()),
+        SizedBox(
+          width: 16,
+        ),
+        FixedHeroContainer()
+      ],
     );
   }
 }

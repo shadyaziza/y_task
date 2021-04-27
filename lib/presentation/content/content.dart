@@ -9,6 +9,7 @@ import 'secondary_header/secondary_header.dart';
 import 'secondary_header/widgets/widgets.dart';
 import 'widgets/widgets.dart';
 
+//**Content appears under header */
 class Content extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -23,24 +24,35 @@ class Content extends StatelessWidget {
 class MobileContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ListView(padding: EdgeInsets.only(bottom: 36), children: [
-      SearchWidgetMobile(),
-      HeroSectionMobile(),
-      CategoryList(),
-      AdSection()
-    ]);
+    return ListView(
+        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 36),
+        children: [
+          SearchWidgetMobile(),
+          SizedBox(height: 16),
+          HeroSectionMobile(),
+          SizedBox(height: 16),
+          CategoryList(),
+          SizedBox(height: 16),
+          AdSection()
+        ]);
   }
 }
 
 class TabletContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ListView(padding: EdgeInsets.only(bottom: 36), children: [
-      SearchWidgetMobile(),
-      HeroSection(),
-      CategoryList(),
-      AdSection()
-    ]);
+    return ListView(
+      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 36),
+      children: [
+        SearchWidgetMobile(),
+        SizedBox(height: 24),
+        HeroSection(),
+        SizedBox(height: 24),
+        CategoryList(),
+        SizedBox(height: 24),
+        AdSection()
+      ],
+    );
   }
 }
 

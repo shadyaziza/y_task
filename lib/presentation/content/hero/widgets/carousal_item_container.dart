@@ -14,7 +14,6 @@ class CarouselItemContainer extends StatelessWidget {
       children: [
         Container(
           padding: EdgeInsets.all(24),
-          // width: 650,
           height: 250,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
@@ -60,6 +59,7 @@ class CarouselItemContainer extends StatelessWidget {
             ],
           ),
         ),
+        //**I think assets were missing the correct background with phone included, we can either added in code or provide a complete graphic asset for the add which is better imo */
         Positioned(
           bottom: -24,
           right: 0,

@@ -10,40 +10,43 @@ class CategoryIconContainer extends StatelessWidget {
   final String photoUrl;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 150,
-      margin: EdgeInsets.all(8),
-      padding: EdgeInsets.all(8),
-      decoration: BoxDecoration(
-        color: Theme.of(context).backgroundColorDark,
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          Flexible(child: Image.asset('imgs/${photoUrl.trim()}')),
-          Flexible(
-            child: Text(
-              name.trim(),
-            ),
-          ),
-          Flexible(
-            child: Container(
-              padding: EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: Theme.of(context).tagContainerColor,
-                borderRadius: BorderRadius.circular(24),
+    return InkWell(
+      onTap: () {},
+      child: Container(
+        width: 150,
+        margin: EdgeInsets.all(8),
+        padding: EdgeInsets.all(8),
+        decoration: BoxDecoration(
+          color: Theme.of(context).backgroundColorDark,
+          borderRadius: BorderRadius.circular(8),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Flexible(child: Image.asset('imgs/${photoUrl.trim()}')),
+            Flexible(
+              child: Text(
+                name.trim(),
               ),
-              child: FittedBox(
-                fit: BoxFit.contain,
-                child: Text(
-                  '$count items',
-                  textScaleFactor: 0.75,
+            ),
+            Flexible(
+              child: Container(
+                padding: EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: Theme.of(context).tagContainerColor,
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: FittedBox(
+                  fit: BoxFit.contain,
+                  child: Text(
+                    '$count items',
+                    textScaleFactor: 0.75,
+                  ),
                 ),
               ),
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }

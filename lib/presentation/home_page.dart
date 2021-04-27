@@ -19,6 +19,8 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: isDesktop ? null : PlaceAdButton(),
+
+      //**BottomNavBar Loaded only when mobile or tablet */
       bottomNavigationBar: isDesktop
           ? null
           : BottomNavigationBar(items: [

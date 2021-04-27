@@ -19,7 +19,7 @@ class PremiumAdContainer extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
               child: Image.asset(
                 'imgs/car.png',
-                width: 250,
+                width: 300,
                 fit: BoxFit.cover,
               ),
             ),
@@ -32,7 +32,8 @@ class PremiumAdContainer extends StatelessWidget {
               child: Divider(
                 indent: 2,
                 height: 4,
-                color: Colors.black38,
+                thickness: 0.2,
+                color: Colors.black,
               ),
             ),
             SizedBox(

@@ -86,6 +86,7 @@ class LocationSearch extends StatelessWidget {
   Widget build(BuildContext context) {
     return DropdownButtonHideUnderline(
       child: DropdownButtonFormField(
+        onChanged: (dynamic d) => {},
         decoration: InputDecoration(border: InputBorder.none),
         hint: Row(
           crossAxisAlignment: CrossAxisAlignment.center,

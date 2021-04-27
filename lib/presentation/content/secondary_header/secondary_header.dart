@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_framework/responsive_framework.dart';
-import '../../responsive/responsive_widget.dart';
 
 import 'widgets/widgets.dart';
 

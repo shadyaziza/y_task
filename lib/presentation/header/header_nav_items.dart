@@ -31,7 +31,7 @@ class LanguageDropDown extends StatelessWidget {
   }
 }
 
-//should be injected from app state
+//should be injected from app state, but I am putting it here yo mimic a shared data state between mobile or web widgets
 final List<Widget> headerNavItem = [
   TextButton(
     onPressed: () {},

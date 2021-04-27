@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:page_indicator/page_indicator.dart';
 
@@ -31,7 +33,11 @@ class _HeroCarouselState extends State<HeroCarousel> {
       indicatorSelectorColor: kBackgroundColorDark,
       child: PageView(
         controller: _pageController,
-        onPageChanged: (int newValue) => (setState(() => _index = newValue)),
+        onPageChanged: (int newValue) => (setState(
+          () {
+            _index = newValue;
+          },
+        )),
         children: [
           CarouselItemContainer(index: _index),
           CarouselItemContainer(index: _index),
