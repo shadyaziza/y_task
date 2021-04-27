@@ -55,8 +55,15 @@ class PremiumAdContainer extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 64),
-                      child: Icon(Icons.favorite_outline_outlined),
-                    ),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.favorite_outline_outlined,
+                          ),
+                          Text('50'),
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),
