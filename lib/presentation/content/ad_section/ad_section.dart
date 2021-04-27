@@ -7,7 +7,7 @@ class AdSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // padding: EdgeInsets.symmetric(horizontal: 16),
+      padding: EdgeInsets.only(bottom: 32),
       decoration: BoxDecoration(color: Theme.of(context).backgroundColorDark),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
